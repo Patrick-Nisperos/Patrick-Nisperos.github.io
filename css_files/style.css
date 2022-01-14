@@ -1,23 +1,22 @@
 
 h3 {
-    font-style: italic;
+  font-style: italic;
 }
 
 p{ /*Used to style paragraphs*/
-    color:green;
-    font-size: 15px;
-    margin:10px;
+  color:green;
+  font-size: 15px;
+  margin:10px;
     
 }
 
 #close{ /*ID used for single closing statement*/
-    color: black;
-    background-color: lightgray;
-    width: 300px;
-    height: 20px;
+  color: black;
+  background-color: lightgray;
+  width: 300px;
+  height: 20px;
 
 }
-
 
 /* Navigation Bar Styling */
 .container {
@@ -39,6 +38,7 @@ header::after {
   float: left;
   padding: 0px;
 }
+/* ---------  */
 
 nav {
   float: right;
@@ -62,7 +62,7 @@ nav a {
   color: #444;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 nav a:hover {
@@ -87,3 +87,6 @@ nav a:hover::before { /* Styling the bar when hovering */
   height: 15%;
 }
 
+nav a.active {
+  background-color: lightgray;
+}

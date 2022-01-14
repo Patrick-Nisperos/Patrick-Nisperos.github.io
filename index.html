@@ -6,8 +6,9 @@
     <meta name="description" content="Personal website: contains homepage, bio, projects, games, and contact pages." />
     <meta name="author" content = "Patrick Nisperos"/>
     <title>Patrick's Website Homepage</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js" defer></script> -->
+    <link rel="stylesheet" href="css_files/style.css">
+    <link rel="stylesheet" href="css_files/homepage_style.css">
+    <script src="javascript_files/homepage.js" defer></script>
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
         <img src="assets/Patrick's Logo.PNG" alt="logo" class="logo">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/projects.html">Projects</a></li>
             <li><a href="pages/games.html">Games</a></li>
@@ -25,12 +26,46 @@
       </div>
     </header>
     <hr>
+    <div class="container">
+      <h1 class="page_title">- Homepage -</h1>
+      <p>"The world is a reflection of yourself. You do not see the world as it is, you see the world as you are."</p>
+      <p>I am building a personal website for the purposes of relearning html/css. And to pick up the language of JavaScript.
+          This would be hosted on my github pages. Good luck future Patrick!, from past Patrick.
+      </p>
+      <div id="close">Contact Info - 
+  
+      </div>
+    </div>
+    <div class="slideshow_container">
+      <p>Pictures of interests slideshow:</p>
+      <div class="homepage_slideshow fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="assets/lake_hills.jpg" alt="lake_hills" class="homepage_slide">
+        <div class="text">Lake and Some Hills</div>
+      </div>
+      <div class="homepage_slideshow fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="assets/philippines_province.jpg" alt="philippines_province" class="homepage_slide">
+        <div class="text">Province in the Philippines</div>
+      </div>
+      <div class="homepage_slideshow fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="assets/beach_rainbow.jpg" alt="beach_rainbow" class="homepage_slide">
+        <div class="text">Beach with a Rainbow</div>
+      </div>
+      <div class="homepage_slideshow fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="assets/bloodybelly_comb_jelly.jpg" alt="Bloodybelly Comb Jelly" class="homepage_slide">
+        <div class="text">Bloodybelly Comb Jelly</div>
+      </div>
+      <div class="homepage_slideshow fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="assets/ball_court.jpg" alt="ball_court" class="homepage_slide">
+        <div class="text">Ball is Life</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
 
-    <h3>Welcome</h3>
-    <p>"The world is a reflection of yourself. You do not see the world as it is, you see the world as you are."</p>
-    <p>I am building a personal website for the purposes of relearning html/css. And to pick up the language of JavaScript.
-        This would be hosted on my github pages. Good luck future Patrick!, from past Patrick.
-    </p>
-    <div id="close">Closing information:</div>
   </body>
 </html>
