@@ -1,3 +1,13 @@
+img.github_logo {
+    height: auto; 
+    width: auto; 
+    max-width: 250px; 
+    max-height: 250px;
+}
+img.github_logo:hover {
+    background-color: gray;
+}
+
 /* projects slideshow styling */
 
 .slideshow_header {
