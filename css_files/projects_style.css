@@ -1,4 +1,4 @@
-/* Homepage slideshow styling */
+/* projects slideshow styling */
 
 .slideshow_header {
     text-align: center;
@@ -6,8 +6,7 @@
     padding-bottom: 8px;
     font-weight: bold;
 }
-
-.homepage_slide { /*Styling for homepage slides*/
+.projects_slide { /*Styling for project slides*/
     width: 100%;
     max-width: 1000px;
     max-height: 600px;
@@ -15,7 +14,7 @@
 
   /*  -------- */
 
-.homepage_slideshow {
+.projects_slideshow {
     display: none
 }
 img {
@@ -55,7 +54,7 @@ img {
 }
 /* Caption text */
 .text {
-    background-color: lightgreen;
+    background-color: lightblue;
     color: black;
     font-size: 25px;
     padding: 8px 12px;
