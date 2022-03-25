@@ -5,7 +5,9 @@
   text-align: center;
   
 }
-
+a {
+  font-size: 30px;
+}
 h3 {
   font-style: italic;
 }
