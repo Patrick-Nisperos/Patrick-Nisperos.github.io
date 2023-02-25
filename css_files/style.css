@@ -1,21 +1,54 @@
-.page_title {
-  color:black;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  
+
+/* Animation to title message */
+@keyframes title_bounce {
+  0% {
+    transform: translateX(-200%);
+  }
+  30% {
+    transform: translateX(80%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  60% {
+    transform: translateY(30%);
+  }
+  90% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
+
+/* Apply animation to page_title */
+.page_title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  animation-name: title_bounce;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 0.5s; */
+  text-align: center;
+}
+
+
 a {
   font-size: 30px;
+}
+h2 {
+  text-align: center;
 }
 h3 {
   font-style: italic;
 }
 
 p{ /*Used to style paragraphs*/
-  color:green;
   font-size: 15px;
-  margin:10px;
+  margin-left:80px;
+  margin-right:80px;
+  line-height:1.5;
     
 }
 
@@ -27,12 +60,14 @@ p{ /*Used to style paragraphs*/
 
 }
 
-/* Navigation Bar Styling */
+
 .container {
 	width: 70%;
 	margin: 0 auto;
+  position: relative;
 }
 
+/* Navigation Bar Styling */
 header {
   background: white;
 }
