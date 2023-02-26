@@ -1,5 +1,51 @@
-/* Homepage slideshow styling */
+/* Resume Sizing */
+.resume_image {
+    max-width: 80%; /* Set the maximum width to 80% of the parent element */
+    height: auto; /* Auto adjust the height based on the aspect ratio of the image */
+    display: block; /* Set the image display property to block to allow for margin auto */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+/* Set the image size for screens with a maximum width of 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+    .resume_image {
+        width: 100%; /* Set the width to 100% of the parent element */
+        height: auto; /* Auto adjust the height based on the aspect ratio of the image */
+    }
+}
 
+/* logos for github / linkedin */
+.logo_container {
+	width: 70%;
+	margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Horizontally center the links */
+    align-items: center; /* Vertically center the links */
+}
+
+/* Style for the link */
+.logo {
+    display: inline-block;
+    /* padding-bottom: 0%; /* Set padding to be equal to max-width */
+}
+
+/* Style for the image */
+.logo img {
+    max-width: 60%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    padding-bottom: 10%;
+}
+
+/* Style for the hover effect */
+.logo:hover img {
+    transform: rotate(360deg);
+}
+
+
+
+/* Homepage slideshow styling */
 .slideshow_header {
     text-align: center;
     font-size: 24px;

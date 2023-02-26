@@ -49,6 +49,7 @@ p{ /*Used to style paragraphs*/
   margin-left:80px;
   margin-right:80px;
   line-height:1.5;
+  font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -62,9 +63,16 @@ p{ /*Used to style paragraphs*/
 
 
 .container {
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
   position: relative;
+}
+
+.guide_container {
+	width: 75%;
+	margin: 0 auto;
+  position: relative;
+  text-align: center;
 }
 
 /* Navigation Bar Styling */
@@ -78,9 +86,13 @@ header::after {
   clear: both;
 }
 
-.logo {
-  float: left;
-  padding: 0px;
+.navigation_container {
+  width: 70%;
+	margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* ---------  */
 
