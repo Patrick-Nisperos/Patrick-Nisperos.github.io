@@ -8,12 +8,10 @@
     <title>Patrick's Website Projects</title>
     <link rel="stylesheet" href="../css_files/style.css">
     <link rel="stylesheet" href="../css_files/projects_style.css">
-    <script src="../javascript_files/projects.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1 class="logo"></h1>
+      <div class="navigation_container">
         <img src="../assets/Patrick's Logo.PNG" alt="logo" class="logo">
         <nav>
           <ul>
@@ -27,52 +25,49 @@
     <hr>
     <div class="container">
       <div class="page_title">Projects</div>
-      <p>** Under Construction **</p>
-      <p>I am building a personal website for the purposes of relearning html/css. And to pick up the language of JavaScript.
-          This would be hosted on my github pages.
-      </p>
+      <h2 style="text-align: center;"> Below is a slideshow you can click through to see the projects I've worked on. 
+      </h2>
     </div>
-        <div class="slideshow_container">
-          <div class="slideshow_header">Projects Slideshow</div>
-          <div class="projects_slideshow fade">
-            <div class="numbertext">1 / 6</div>
-            <img src="../assets/projects/imperative_language_interpreter.PNG" alt="imperative_language_interpreter" class="projects_slide">
-            <div class="text">Imperative Language Interpreter</div>
-          </div>
-          <div class="projects_slideshow fade">
-            <div class="numbertext">2 / 6</div>
-            <img src="../assets/projects/frigate.PNG" alt="frigate" class="projects_slide">
-            <div class="text">Frigate (One-sided Battleship)</div>
-          </div>
-          <div class="projects_slideshow fade">
-            <div class="numbertext">3 / 6</div>
-            <img src="../assets/projects/medieval_defense_game.PNG" alt="medieval_defense_game" class="projects_slide">
-            <div class="text">Medieval Defense Game</div>
-          </div>
-          <div class="projects_slideshow fade">
-            <div class="numbertext">4 / 6</div>
-            <img src="../assets/projects/project_tanks_game.PNG" alt="project_tanks_game" class="projects_slide">
-            <div class="text">Project Tanks Game</div>
-          </div>
-          <div class="projects_slideshow fade">
-            <div class="numbertext">5 / 6</div>
-            <img src="../assets/projects/bank_simulator.PNG" alt="bank_simulator" class="projects_slide">
-            <div class="text">Bank Simulator</div>
-          </div>
-          <div class="projects_slideshow fade">
-            <div class="numbertext">6 / 6</div>
-            <img src="../assets/projects/personal_website.PNG" alt="personal_website" class="projects_slide">
-            <div class="text">Personal Website</div>
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="slideshow_container">
+        <div class="projects_slideshow fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="../assets/projects/imperative_language_interpreter.PNG" alt="imperative_language_interpreter" class="projects_slide">
         </div>
-        <br> <br> <br>
-        <div class="container">
-          <div id="close">Contact Info - 
-      
-          </div>
+        <div class="projects_slideshow fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="../assets/projects/frigate.PNG" alt="frigate" class="projects_slide">
         </div>
+        <div class="projects_slideshow fade">
+          <div class="numbertext">3 / 8</div>
+          <img src="../assets/projects/medieval_defense_game.PNG" alt="medieval_defense_game" class="projects_slide">
+        </div>
+        <div class="projects_slideshow fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="../assets/projects/project_tanks_game.PNG" alt="project_tanks_game" class="projects_slide">
+        </div>
+        <div class="projects_slideshow fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="../assets/projects/git_defender.PNG" alt="git_defender" class="projects_slide">
+        </div>
+        <div class="projects_slideshow fade">
+          <div class="numbertext">6 / 8</div>
+          <img src="../assets/projects/bank_simulator.PNG" alt="bank_simulator" class="projects_slide">
+        </div>
+        <div class="projects_slideshow fade">
+          <div class="numbertext">7 / 8</div>
+          <img src="../assets/projects/pc_hardware_tutorial.PNG" alt="pc_hardware_tutorial" class="projects_slide">
+        </div>
+        <div class="projects_slideshow fade">
+          <div class="numbertext">8 / 8</div>
+          <img src="../assets/projects/personal_website.PNG" alt="personal_website" class="projects_slide">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br> <br> <br>
 
+      <!-- Call the javascript files at the end since HTML is rendered sequentially -->
+      <script src="../javascript_files/projects.js" defer></script>
   </body>
 </html>

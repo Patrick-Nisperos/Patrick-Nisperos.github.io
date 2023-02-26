@@ -7,13 +7,11 @@
     <meta name="author" content = "Patrick Nisperos"/>
     <title>Patrick's Website Games</title>
     <link rel="stylesheet" href="../css_files/style.css">
-    <link rel="stylesheet" href="../css_files/homepage_style.css">
-    <!--script src="javascript_files/homepage.js" defer></script-->
+    <link rel="stylesheet" href="../css_files/games_style.css">
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1 class="logo"></h1>
+      <div class="navigation_container">
         <img src="../assets/Patrick's Logo.PNG" alt="logo" class="logo">
         <nav>
           <ul>
@@ -27,14 +25,23 @@
     <hr>
     <div class="container">
       <div class="page_title">Games</div>
-      <p>** Under Construction **</p>
-      <p>I am building a personal website for the purposes of relearning html/css. And to pick up the language of JavaScript.
-          This would be hosted on my github pages.
+      <h2>Finally some games. These aren't triple A titles but give me some time and maybe I'll make the next <i>God Of War</i><h2>
+      <p> Yeah, I got <i>one</i> so far.
       </p>
-      <div id="close">Contact Info - 
-  
-      </div>
+    </div>
+    <div class="game_container">
+      <h1>Hangman Game</h1>
+      <div id="game_text">Guess the word:</div>
+      <div id="word"></div>
+      <div id="incorrect_guesses"></div>
+      <div id="game_text">Guess a letter:</div>
+      <input type="text" id="guess_input">
+      <button id="guess_btn">Guess</button>
+      <div id="win_lose"></div>
+      <pre id="hangman"></div>
     </div>
 
+    <!-- Call the javascript files at the end since HTML is rendered sequentially -->
+    <script src="../javascript_files/hangman_game.js"></script> <!-- hangman game javascript -->
   </body>
 </html>

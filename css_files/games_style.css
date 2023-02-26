@@ -1,0 +1,12 @@
+
+/* game container */
+.game_container {
+	width: 75%;
+	margin: 0 auto;
+    position: relative;
+}
+#game_text {
+    color:darkgreen;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
