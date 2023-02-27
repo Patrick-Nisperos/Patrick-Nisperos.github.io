@@ -65,7 +65,7 @@ function display_win() {
 function display_lost() {
     const lost_element = document.getElementById("win_lose");
     lost_element.style.display = "block";
-    win_element.style.color = "red";
+    lost_element.style.color = "red";
     lost_element.textContent = "You lost, try again!";
 }
 
