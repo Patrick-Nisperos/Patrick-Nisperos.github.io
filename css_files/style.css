@@ -63,7 +63,7 @@ p{ /*Used to style paragraphs*/
 
 
 .container {
-	width: 75%;
+	max-width: 70vw; /* 70 percent maximum viewport width */
 	margin: 0 auto;
   position: relative;
 }

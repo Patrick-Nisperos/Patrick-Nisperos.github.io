@@ -41,10 +41,11 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-/* Code for autoplaying project videos */
-const video = document.getElementById('project_video');
+/* Code for autoplaying project videos and creating a typewriter effect */
+// Get a list of all elements with the "typewriter_text" class
+const textList = document.querySelectorAll('.typewriter_text');
 
-function playVideoWhenVisible() {
+function playVideoWhenVisible(video) {
   // Get the video element's position and dimensions on the page
   const videoPosition = video.getBoundingClientRect();
   const videoHeight = videoPosition.height;
@@ -70,52 +71,70 @@ function playVideoWhenVisible() {
   }
 }
 
+function typeWriter(text) {
+  const textValue = text.innerHTML;
+  let i = 0;
+  let isTriggered = false; // Add a Boolean variable to check if the typewriter effect has been triggered for this element
+
+  function write() {
+    if (i < textValue.length) {
+      text.innerHTML = textValue.substr(0, i+1);
+      i++;
+      setTimeout(write, 50); // Set the delay between each character being typed (in milliseconds)
+    } else {
+      // Update the isTriggered variable once the typewriter effect has finished
+      isTriggered = true;
+      // Remove the event listener once the typewriter effect has finished
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }
+
+  // Check if the element is visible on the screen and the typewriter effect hasn't been triggered yet
+  if (text.getBoundingClientRect().top < window.innerHeight && !isTriggered) {
+    write();
+  }
+}
+
+
+function handleScroll() {
+  // Iterate over all project videos and check if they are visible
+  const videoList = document.querySelectorAll('.project_video');
+  videoList.forEach(function(video) {
+    playVideoWhenVisible(video);
+  });
+
+  // Iterate over all elements with the "typewriter_text" class and apply the typewriter effect
+  textList.forEach(function(text) {
+    typeWriter(text);
+  });
+}
+
+// Call handleScroll once to play any visible videos
+handleScroll();
+
 // Add an event listener to detect when the user scrolls
-window.addEventListener('scroll', playVideoWhenVisible);
+window.addEventListener('scroll', handleScroll);
 
 
-
-
-//const video_speedup = document.getElementById('project_video');
-//video_speedup.autoplay = true; // enable autoplay
-//video_speedup.playbackRate = 2.0; // set the playback rate to 2x
-
-
-/* Code to create a "typewriter" effect */
-
-// // Set the delay between each character being typed (in milliseconds)
-// const delay = 100;
-
-// // Get the element where the text will be displayed
-// const typewriter = document.getElementById("typewriter");
-
-// // Start the typewriter effect
-// const text = document.getElementById('typewriter')
-// let i = 0;
-// function typeWriter() {
-//   if (i < text.length) {
-//     typewriter.innerHTML += text.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, delay);
-//   }
-// }
 
 // // Call the function to start the typewriter effect
 // typeWriter();
 
-const text = document.querySelector('#typewriter_text');
-const textValue = text.innerHTML;
-text.innerHTML = '';
+/* Code to create a "typewriter" effect */
+// const text = document.querySelector('#typewriter_text'); // Get the element where the text will be displayed
+// const text_value = text.innerHTML;
+// text.innerHTML = '';
 
-let i = 0;
-function typeWriter() {
-  if (i < textValue.length) {
-    text.innerHTML += textValue.charAt(i);
-    i++;
-    setTimeout(typeWriter, 50);
-  }
-}
-typeWriter();
+// let i = 0;
+// function typeWriter() {
+//   if (i < text_value.length) {
+//     text.innerHTML += text_value.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, 50); // Set the delay between each character being typed (in milliseconds)
+//   }
+// }
+// typeWriter();
+
 
 
 
