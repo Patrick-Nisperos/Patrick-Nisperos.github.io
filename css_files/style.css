@@ -1,4 +1,4 @@
-
+/* style.css applies to all html pages */
 /* Animation to title message */
 @keyframes title_bounce {
   0% {
@@ -21,16 +21,31 @@
   }
 }
 
+/* Background color*/
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  margin: 0;
+  padding: 0;
+  /* background-color: #f2f2f2; */
+}
+
 /* Apply animation to page_title */
 .page_title {
   font-size: 3rem;
   font-weight: bold;
-  color: black;
+  color: rgb(36, 36, 36);
   animation-name: title_bounce;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   /* animation-delay: 0.5s; */
   text-align: center;
+
+  background-color: lightblue;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: 1rem auto;
+  max-width: 15rem;
+  padding: 0.8rem;
 }
 
 
@@ -39,6 +54,13 @@ a {
 }
 h2 {
   text-align: center;
+
+  background-color: rgb(255, 166, 0);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: 1rem auto;
+  max-width: 25rem;
+  padding: 0.5rem;
 }
 h3 {
   font-style: italic;
@@ -69,10 +91,15 @@ p{ /*Used to style paragraphs*/
 }
 
 .guide_container {
-	width: 75%;
 	margin: 0 auto;
   position: relative;
   text-align: center;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 45rem;
+  padding: 0.5rem;
 }
 
 /* Navigation Bar Styling */

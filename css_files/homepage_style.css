@@ -1,6 +1,6 @@
 /* Resume Sizing */
 .resume_image {
-    max-width: 80%; /* Set the maximum width to 80% of the parent element */
+    max-width: 70%; /* Set the maximum width to 70% of the parent element */
     height: auto; /* Auto adjust the height based on the aspect ratio of the image */
     display: block; /* Set the image display property to block to allow for margin auto */
     margin: 0 auto; /* Center the image horizontally */

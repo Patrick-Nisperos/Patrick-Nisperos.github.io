@@ -158,3 +158,34 @@ img {
     font-size: 11px
     }
 }
+
+/* logos for github project link */
+.logo_container {
+	width: 20%;
+	margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Horizontally center the links */
+    align-items: center; /* Vertically center the links */
+}
+
+/* Style for the link */
+.logo {
+    display: inline-block;
+    /* padding-bottom: 0%; /* Set padding to be equal to max-width */
+}
+
+/* Style for the image */
+.logo img {
+    max-width: 8rem;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: -10rem;
+}
+
+/* Style for the hover effect */
+.logo:hover img {
+    transform: rotate(360deg);
+}
+
