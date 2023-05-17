@@ -26,12 +26,12 @@ body {
   /* font-family: 'Roboto', sans-serif; */
   margin: 0;
   padding: 0;
-  /* background-color: #f2f2f2; */
+  background-color: #F8F8F8;
 }
 
 /* Apply animation to page_title */
 .page_title {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: rgb(36, 36, 36);
   animation-name: title_bounce;
@@ -45,7 +45,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin: 1rem auto;
   max-width: 15rem;
-  padding: 0.8rem;
+  padding: 0.5rem;
 }
 
 
@@ -135,8 +135,8 @@ nav ul {
 
 nav li { /* Styling for navigation items */
   display: inline-block;
-  margin-left: 70px;
-  padding-top: 30px;
+  margin-left: 40px;
+  padding-top: 20px;
 
   position: relative;
 }
@@ -174,4 +174,11 @@ nav a:hover::before { /* Styling the bar when hovering */
 
 nav a.active {
   background-color: lightgray;
+}
+
+/* Style for the link */
+.website_logo {
+  padding-top: 0.9%;
+  display: inline-block;
+  /* padding-bottom: 0%; /* Set padding to be equal to max-width */
 }
