@@ -30,8 +30,7 @@
       </p>
     </div>
     <div class="slideshow_container">
-      <h2> - Project Slideshow -
-      </h2>
+      <h2>Project Slideshow</h2>
       <div class="projects_slideshow fade">
         <div class="numbertext">1 / 9</div>
         <img src="../assets/projects/song_surf.png" alt="song_surf" class="projects_slide">
@@ -72,7 +71,7 @@
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br> <br>
-    <h2>- Detailed View -</h2>
+    <h2>Detailed View</h2>
     <div class="project_video_container">
       <h1 id="project_title" >SongSurf</h1>
       <video id="project_video_1" class="project_video" preload="auto" controls muted loop>
@@ -232,5 +231,31 @@
 
     <!-- Call the javascript files at the end since HTML is rendered sequentially -->
     <script src="../javascript_files/projects.js" defer></script>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Thanks for visiting.</p>
+        <div id="contact-info">
+          <p id="email-info"><a href="#" onclick="showContactInfo()">Contact Me</a></p>
+        </div>
+        <div id="captcha" style="display: none;">
+          <p style="font-size: 1rem">Contact: patrickenisperos@gmail.com</p>
+          <p><a href="assets/home_page/Patrick_Nisperos_Resume.pdf" download id="resume-link">Download My Resume</a></p>
+        </div>
+      </div>
+      
+      <script>
+        function showContactInfo() {
+          const captcha = prompt('To make sure you are not a bot, what is ten plus ten?');
+      
+          if (captcha === '20') {
+            document.getElementById('email-info').style.display = 'none';
+            document.getElementById('captcha').style.display = 'block';
+          } else {
+            alert('Invalid captcha. Please try again.');
+          }
+        }
+      </script>
+    </footer>
   </body>
 </html>

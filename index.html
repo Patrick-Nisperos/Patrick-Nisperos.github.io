@@ -27,21 +27,39 @@
       <div class="page_title">Welcome!</div>
     </div>
     <div class="guide_container">
-      <p>Hey there! Im Patrick. Here are the pages available to visit: <br>
-        <strong>Home</strong> - You are currently here, a page with resume and links.<br>
+      <p>Pages available to visit: <br>
+        <strong>Home</strong> - You are currently here, a page with links and a little about me.<br>
         <strong>Projects</strong> - A page about almost all of the programming projects i've worked on. <br>
         <strong>Games</strong> - A page with games if you find yourself bored.<br>
         Thanks thats it!
       </p>
     </div>
-    <div class="container">
-      <h2>- Resume -</h2>
-      <a href="assets/home_page/Patrick_Nisperos_Resume.pdf" target="_blank">
-        <img src="assets/home_page/Patrick_Nisperos_Resume.jpg" alt="Resume PDF" class="resume_image">
-      </a>
+    <div class="about_container">
+      <h2>About Me</h2>
+      <p>
+        Hey there! I'm Patrick, I love to shoot hoops, explore philosophy, nature, and car culture. I also enjoy solving problems, and building stuff.
+        <br>
+        When I was a kid (early 2000's), I enjoyed math more than other subjects. Also, this was the time
+        schools started to introduce computers to students, and homes with personal computers were <a href="https://www.statista.com/statistics/184685/percentage-of-households-with-computer-in-the-united-states-since-1984/" target="_blank">gradually increasing.</a>
+        I got excited every time I got the chance to use a computer because I realized you can do so many things with them, and eventually started touch typing which was relatively rare amongst my generation at the time.
+        When I got my first laptop, I often played a PC game called Warcraft III, and created my own custom games using its
+         <a href="https://wowpedia.fandom.com/wiki/Warcraft_III_World_Editor">game engine</a> and found it more fun than playing the actual game. Then was lucky to have had a computer elective in middle school,
+         where we learned how to code using <a href="https://scratch.mit.edu/">scratch</a>. Then I got lucky again, when in my high school they offered a computer programming and game development elective
+         where I made custom games in <a href="https://www.unrealengine.com/en-US">Unreal Engine 4</a>. By this point, I was still confused on what to do in terms of career.
+         Because I still had a great interest in cars and nature, I debated mech engineering and bio engineering. But figured my talent and passion in computing would be more fufilling to me.
+         So I studied computer science in college to become a software developer while working part-time jobs throughout the process. And did not regret it.
+        
+        <br><br>
+        TLDR: I liked math, I typed fast, and enjoyed creating. I went to college to study computer science, so I can build software for a living.
+        <br>
+        
+        
+      </p>
+      <p>
+        
     </div>
     <div class="container">
-      <h2>- Links -</h2>
+      <h2>Links</h2>
       <div class="logo_container">
           <a href = "https://github.com/Patrick-Nisperos" class="logo">
             <img src="assets/home_page/github_logo.png" alt="github_logo">
@@ -51,6 +69,8 @@
           </a>         
       </div>
     </div>
+
+    
     <!-- <div class="slideshow_container">
       <div class="slideshow_header">Random Slideshow</div>
       <div class="homepage_slideshow fade">
@@ -85,5 +105,31 @@
 
     <!-- Call the javascript files at the end since HTML is rendered sequentially -->
     <script src="javascript_files/homepage.js" defer></script>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Thanks for visiting.</p>
+        <div id="contact-info">
+          <p id="email-info"><a href="#" onclick="showContactInfo()">Contact Me</a></p>
+        </div>
+        <div id="captcha" style="display: none;">
+          <p style="font-size: 1rem">Contact: patrickenisperos@gmail.com</p>
+          <p><a href="assets/home_page/Patrick_Nisperos_Resume.pdf" download id="resume-link">Download My Resume</a></p>
+        </div>
+      </div>
+      
+      <script>
+        function showContactInfo() {
+          const captcha = prompt('To make sure you are not a bot, what is ten plus ten?');
+      
+          if (captcha === '20') {
+            document.getElementById('email-info').style.display = 'none';
+            document.getElementById('captcha').style.display = 'block';
+          } else {
+            alert('Invalid captcha. Please try again.');
+          }
+        }
+      </script>
+    </footer>
   </body>
 </html>

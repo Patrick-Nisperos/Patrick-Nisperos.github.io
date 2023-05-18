@@ -44,5 +44,31 @@
 
     <!-- Call the javascript files at the end since HTML is rendered sequentially -->
     <script src="../javascript_files/hangman_game.js"></script> <!-- hangman game javascript -->
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Thanks for visiting.</p>
+        <div id="contact-info">
+          <p id="email-info"><a href="#" onclick="showContactInfo()">Contact Me</a></p>
+        </div>
+        <div id="captcha" style="display: none;">
+          <p style="font-size: 1rem">Contact: patrickenisperos@gmail.com</p>
+          <p><a href="assets/home_page/Patrick_Nisperos_Resume.pdf" download id="resume-link">Download My Resume</a></p>
+        </div>
+      </div>
+      
+      <script>
+        function showContactInfo() {
+          const captcha = prompt('To make sure you are not a bot, what is ten plus ten?');
+      
+          if (captcha === '20') {
+            document.getElementById('email-info').style.display = 'none';
+            document.getElementById('captcha').style.display = 'block';
+          } else {
+            alert('Invalid captcha. Please try again.');
+          }
+        }
+      </script>
+    </footer>
   </body>
 </html>
